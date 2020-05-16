@@ -12,6 +12,7 @@
         <a-assets>
             <img id="grass" src="images/grass.jpg">
             <a-asset-item id="tree" src="models/tree.obj"></a-asset-item>
+            <a-asset-item id="material" src="models/tree.mtl"></a-asset-item>
         </a-assets>
         
         
@@ -22,11 +23,13 @@
             rotation="-90 1 0">
         </a-plane>
          
-        <a-tree 
-            height="100" 
-            width="50" 
-           position="0 1.5 -2">
-        </a-tree>
+        <a-obj-model
+            src="#object"
+            mtl="#material"
+            position="0 1.5 -1"
+            scale="50 25 50">
+        </a-obj-model>
+        
         
         
         <a-ring 
