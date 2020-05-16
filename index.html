@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width">
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="script/script.js" defer></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
   </head>
   <body>
     <a-scene background="color: #333">        
@@ -13,9 +14,11 @@
             <img id="grass" src="images/grass.jpg">
             <a-asset-item id="tree" src="models/tree.obj"></a-asset-item>
             <a-asset-item id="material" src="models/tree.mtl"></a-asset-item>
-            <a-asset-item id="vos" src="models/low-poly-fox-by-pixelmannen.stl"></a-asset-item>
-            <a-asset-item id="vos-tectuur" src="models/texture.png"></a-asset-item>
         </a-assets>
+        
+        <a-entity 
+            environment="preset: volcano">
+        </a-entity>
         
         
         <a-plane 
@@ -30,13 +33,6 @@
             mtl="#material"
             position="-2 0 5">
         </a-obj-model>
-        
-        <a-obj-model
-            src="#vos"
-            material="src: #vos-textuur";
-            position="-3 0 5">
-        </a-obj-model>
-        
         
         <a-ring 
             color="teal" 
