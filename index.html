@@ -25,7 +25,7 @@
             height="10"
             width="3"
             depth="2"
-              >
+            rotation="-90 45 0">
         </a-box>
         
 <!--
@@ -39,7 +39,7 @@
          
         
         <a-ring 
-            color="teal" 
+            color="red" 
             radius-inner="0.9" 
             radius-outer="1" 
             position="0 1.5 -3"
@@ -51,16 +51,28 @@
                    loop: true">
         </a-ring>
          <a-ring 
-            color="pink" 
+            color="black" 
             radius-inner="0.8" 
             radius-outer="1" 
-            position="-0.5 1.5 -5">
+            position="-0.5 1.5 -5"
+            shadow 
+            animation="property: position; 
+                   to: 0 1.5 -4; 
+                   dur: 3000; 
+                   easing: easeInOutBack; 
+                   loop: true">
         </a-ring>
         <a-ring 
-            color="yellow" 
+            color="grey" 
             radius-inner="0.7" 
             radius-outer="1" 
-            position="-1 1.5 -7">
+            position="-1 1.5 -7"
+            shadow 
+            animation="property: position; 
+                   to: -1 1.8 -7; 
+                   dur: 1000; 
+                   easing: easeInOutBack; 
+                   loop: true">
         </a-ring>
         
         
